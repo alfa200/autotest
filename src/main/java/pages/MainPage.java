@@ -22,11 +22,12 @@ public class MainPage extends BasePage {
     WebElement menuInsurance;
 
     public void selectMenuItem() {
-        Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
+        Wait<WebDriver> wait = new WebDriverWait(driver, 10, 1000);
         wait.until(ExpectedConditions.elementToBeClickable(menuItems)).click();
     }
 
     public void selectInsuranceItem() {
-        menuInsurance.click();
+        Wait<WebDriver> wait = new WebDriverWait(driver, 10, 1000);
+        wait.until(ExpectedConditions.elementToBeClickable(menuInsurance)).click();
     }
 }
