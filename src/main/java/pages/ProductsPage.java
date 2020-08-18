@@ -43,7 +43,8 @@ public class ProductsPage extends BasePage {
     }
 
     public void clickRegister(){
-        register.click();
+        Wait<WebDriver> wait = new WebDriverWait(driver, 10, 1000);
+        wait.until(ExpectedConditions.elementToBeClickable(register)).click();
     }
 
 }
