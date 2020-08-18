@@ -55,6 +55,7 @@ public class RegistrationSteps{
     public void stepCheckInsurerDocument(String pSeries, String pNumber, String pDate, String pPlace){
         RegistrationPage registrationPage = new RegistrationPage(BaseSteps.getDriver());
         registrationPage.checkpDate(pDate);
+        registrationPage.clickdDate();
         registrationPage.checkpNumber(pNumber);
         registrationPage.checkpPlace(pPlace);
         registrationPage.checkpSeries(pSeries);

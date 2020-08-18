@@ -47,7 +47,7 @@ public class BaseSteps {
 
     }
 
-    @After
+/*    @After
     public static void tearDown() throws Exception {
         driver.quit();
     }
@@ -59,7 +59,7 @@ public class BaseSteps {
         } catch (NoSuchElementException e) {
             return false;
         }
-    }
+    }*/
 
     protected void fillField(By locator, String value) {
         driver.findElement(locator).clear();

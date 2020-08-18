@@ -14,6 +14,7 @@ public class MainSteps {
 
     @Step("Выбрано Страхование путешественников")
     public void stepSelectInsuranceItem(){
+
         new MainPage(BaseSteps.getDriver()).selectInsuranceItem();
     }
 

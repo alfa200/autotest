@@ -160,4 +160,7 @@ public class RegistrationPage extends BasePage {
     public void checkpPlace(String actualValue) {
         Assert.assertEquals(pPlace.getAttribute("value"), actualValue);
     }
+    public void clickdDate(){
+        pDate.click();
+    }
 }
