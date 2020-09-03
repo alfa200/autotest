@@ -33,10 +33,10 @@ public class RegistrationPage extends BasePage {
     @FindBy(id = "person_birthDate")
     WebElement insurerBirthdate;
 
-    @FindBy(xpath = "//person-general-data/div/div[5]/div/form-control-label/div/radio-button-group/div/div/label[2]")
+    @FindBy(xpath = "//label[text() = 'Женский']")
     WebElement genderFemale;
 
-    @FindBy(xpath = "//person-general-data/div/div[5]/div/form-control-label/div/radio-button-group/div/div/label[1]")
+    @FindBy(xpath = "//label[text() = 'Мужской']")
     WebElement genderMale;
 
     @FindBy(id = "passportSeries")
